@@ -1,0 +1,208 @@
+# Experiment resources related to the MuLMS-AZ corpus (CODI 2023).
+# Copyright (c) 2023 Robert Bosch GmbH
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as published
+# by the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Affero General Public License for more details.
+# You should have received a copy of the GNU Affero General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+"""
+This module contains BILOU labels for NER.
+"""
+
+# SOFC BILOU labels #
+sofc_bilou_ne_labels: list = [
+    "O",
+    "B-MATERIAL",
+    "I-MATERIAL",
+    "B-EXPERIMENT",
+    "I-EXPERIMENT",
+    "B-VALUE",
+    "I-VALUE",
+    "B-DEVICE",
+    "I-DEVICE",
+]
+
+sofc_bilou_ne_label2id: dict = {l: i for i, l in enumerate(sofc_bilou_ne_labels)}
+sofc_bilou_ne_label2id["x"] = -1
+sofc_bilou_id2ne_label: dict = dict([(v, k) for k, v in sofc_bilou_ne_label2id.items()])
+
+sofc_bilou_slot_labels: list = [
+    "O",
+    "B-anode_material",
+    "I-anode_material",
+    "L-anode_material",
+    "U-anode_material",
+    "B-cathode_material",
+    "I-cathode_material",
+    "L-cathode_material",
+    "U-cathode_material",
+    "B-conductivity",
+    "I-conductivity",
+    "L-conductivity",
+    "U-conductivity",
+    "B-current_density",
+    "I-current_density",
+    "L-current_density",
+    "U-current_density",
+    "B-degradation_rate",
+    "I-degradation_rate",
+    "L-degradation_rate",
+    "U-degradation_rate",
+    "B-device",
+    "I-device",
+    "L-device",
+    "U-device",
+    "B-electrolyte_material",
+    "I-electrolyte_material",
+    "L-electrolyte_material",
+    "U-electrolyte_material",
+    "B-experiment_evoking_word",
+    "I-experiment_evoking_word",
+    "L-experiment_evoking_word",
+    "U-experiment_evoking_word",
+    "B-fuel_used",
+    "I-fuel_used",
+    "L-fuel_used",
+    "U-fuel_used",
+    "B-interlayer_material",
+    "I-interlayer_material",
+    "L-interlayer_material",
+    "U-interlayer_material",
+    "B-open_circuit_voltage",
+    "I-open_circuit_voltage",
+    "L-open_circuit_voltage",
+    "U-open_circuit_voltage",
+    "B-power_density",
+    "I-power_density",
+    "L-power_density",
+    "U-power_density",
+    "B-resistance",
+    "I-resistance",
+    "L-resistance",
+    "U-resistance",
+    "B-support_material",
+    "I-support_material",
+    "L-support_material",
+    "U-support_material",
+    "B-thickness",
+    "I-thickness",
+    "L-thickness",
+    "U-thickness",
+    "B-time_of_operation",
+    "I-time_of_operation",
+    "L-time_of_operation",
+    "U-time_of_operation",
+    "B-voltage",
+    "I-voltage",
+    "L-voltage",
+    "U-voltage",
+    "B-working_temperature",
+    "I-working_temperature",
+    "L-working_temperature",
+    "U-working_temperature",
+]
+
+sofc_bilou_slot_label2id: dict = {l: i for i, l in enumerate(sofc_bilou_slot_labels)}
+sofc_bilou_slot_label2id["x"] = -1
+sofc_bilou_id2slot_label: dict = dict([(v, k) for k, v in sofc_bilou_slot_label2id.items()])
+
+# MSPT BILOU Tags #
+
+mspt_bilou_ne_labels: list = [
+    "O",
+    "B-Meta",
+    "I-Meta",
+    "L-Meta",
+    "U-Meta",
+    "B-Property_Misc",
+    "I-Property_Misc",
+    "L-Property_Misc",
+    "U-Property_Misc",
+    "B-Synthesis_Apparatus",
+    "I-Synthesis_Apparatus",
+    "L-Synthesis_Apparatus",
+    "U-Synthesis_Apparatus",
+    "B-Operation",
+    "I-Operation",
+    "L-Operation",
+    "U-Operation",
+    "B-Property_Unit",
+    "I-Property_Unit",
+    "L-Property_Unit",
+    "U-Property_Unit",
+    "B-Amount_Misc",
+    "I-Amount_Misc",
+    "L-Amount_Misc",
+    "U-Amount_Misc",
+    "B-Number",
+    "I-Number",
+    "L-Number",
+    "U-Number",
+    "B-Amount_Unit",
+    "I-Amount_Unit",
+    "L-Amount_Unit",
+    "U-Amount_Unit",
+    "B-Reference",
+    "I-Reference",
+    "L-Reference",
+    "U-Reference",
+    "B-Property_Type",
+    "I-Property_Type",
+    "L-Property_Type",
+    "U-Property_Type",
+    "B-Material",
+    "I-Material",
+    "L-Material",
+    "U-Material",
+    "B-Material_Descriptor",
+    "I-Material_Descriptor",
+    "L-Material_Descriptor",
+    "U-Material_Descriptor",
+    "B-Characterization_Apparatus",
+    "I-Characterization_Apparatus",
+    "L-Characterization_Apparatus",
+    "U-Characterization_Apparatus",
+    "B-Apparatus_Unit",
+    "I-Apparatus_Unit",
+    "L-Apparatus_Unit",
+    "U-Apparatus_Unit",
+    "B-Apparatus_Descriptor",
+    "I-Apparatus_Descriptor",
+    "L-Apparatus_Descriptor",
+    "U-Apparatus_Descriptor",
+    "B-Apparatus_Property_Type",
+    "I-Apparatus_Property_Type",
+    "L-Apparatus_Property_Type",
+    "U-Apparatus_Property_Type",
+    "B-Condition_Misc",
+    "I-Condition_Misc",
+    "L-Condition_Misc",
+    "U-Condition_Misc",
+    "B-Condition_Unit",
+    "I-Condition_Unit",
+    "L-Condition_Unit",
+    "U-Condition_Unit",
+    "B-Nonrecipe_Material",
+    "I-Nonrecipe_Material",
+    "L-Nonrecipe_Material",
+    "U-Nonrecipe_Material",
+    "B-Condition_Type",
+    "I-Condition_Type",
+    "L-Condition_Type",
+    "U-Condition_Type",
+    "B-Brand",
+    "I-Brand",
+    "L-Brand",
+    "U-Brand",
+]
+mspt_bilou_ne_label2id: dict = {l: i for i, l in enumerate(mspt_bilou_ne_labels)}
+mspt_bilou_ne_label2id["x"] = -1
+mspt_bilou_id2ne_label: dict = dict([(v, k) for k, v in mspt_bilou_ne_label2id.items()])

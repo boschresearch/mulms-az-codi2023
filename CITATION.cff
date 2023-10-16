@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset, please cite it as below."
+authors:
+  - family-names: Schrader
+    given-names: Timo Pierre
+    orcid: https://orcid.org/0009-0006-5466-4939
+  - family-names: Bürkle
+    given-names: Teresa
+  - family-names: Henning
+    given-names: Sophie
+    orcid:
+  - family-names: Tan
+    given-names: Sherry
+  - family-names: Finco
+    given-names: Matteo
+    orcid: https://orcid.org/0000-0003-3559-8340
+  - family-names: Grünewald
+    given-names: Stefan
+  - family-names: Indrikova
+    given-names: Maira
+    orcid:
+  - family-names: Hildebrand
+    given-names: Felix
+    orcid:
+  - family-names: Friedrich
+    given-names: Annemarie
+    orcid: https://orcid.org/0000-0001-8771-7634
+title: "MuLMS-AZ: An Argumentative Zoning Dataset for the Materials Science Domain"
+version: 1.0.0
+doi: 10.18653/v1/2023.codi-1.1
+date-released: 2023-07-06

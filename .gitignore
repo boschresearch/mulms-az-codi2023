@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.idea
+.vscode
+src/jupyter_notebooks/taggers
+results
+*.npy
+*.npz
+*examples.txt
+output/*
+source/output/*
