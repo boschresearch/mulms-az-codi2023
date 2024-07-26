@@ -19,6 +19,8 @@ echo -e '\033[1;31mExecute this script from the directory containing this file! 
 
 PROJECT_ROOT=$(realpath "..")
 
+export PYTHONPATH="$PYTHONPATH:${PROJECT_ROOT}"
+
 ### Training Hyperparameters (add additional if needed) ###
 
 lr=1e-6
